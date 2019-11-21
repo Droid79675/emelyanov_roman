@@ -1,16 +1,16 @@
 public class Reaction {
-    public String number;
+    public int number;
     public String info;
 
 
-    public Reaction(String number, String info){
+    public Reaction(int number, String info){
         this.number = number;
         this.info = info;
     }
-    public String getNumber(){
+    public int getNumber(){
         return number;
     }
-    public void setNumber(String number){
+    public void setNumber(int number){
         this.number = number;
     }
     public String getInfo(){
