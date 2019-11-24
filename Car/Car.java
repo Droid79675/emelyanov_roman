@@ -4,10 +4,10 @@ import java.sql.Date;
     private String number;
     private String markaaa;
     private Date production;
-    private String owner;
+    private Owner owner;
 
 
-     public Car(String number, String markaaa, Date production, String owner) {
+     public Car(String number, String markaaa, Date production) {
          this.number = number;
          this.markaaa = markaaa;
          this.production = production;
@@ -37,12 +37,12 @@ import java.sql.Date;
     public void setProduction(Date production) {
         this.production = production;
     }
+     public Owner getOwner() {
+         return owner;
+     }
 
-    public String getOwner() {
-        return owner;
-    }
+     public void setOwner(Owner owner) {
+         this.owner = owner;
+     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
 }
